@@ -73,7 +73,7 @@ class Main:
             return True
 
 
-        
+
         return False
 
     def checkButtons(self, mousePos):
@@ -122,6 +122,9 @@ main = Main()
 endText = ""
 
 def printEnd(endText):
+
+
+
     endFont = pygame.font.Font("ARCADECLASSIC.ttf", 20)
     endText = " ' " + endText + " ' " + " Has Won The Game"
     endSurf = endFont.render(endText, True, (240, 244, 255))
@@ -157,6 +160,7 @@ while True:
 
     screen.blit(gameScreenBord, (xPos-5, yPos-5))
     screen.blit(gameScreen, (xPos, yPos))
+
     main.drawElements()
 
     if main.gameOver():
